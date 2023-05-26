@@ -1,0 +1,160 @@
+.grid-container {
+  padding-top: 2%;
+}
+
+.grid-container {
+  display: grid;
+  /* grid-template-columns: 240px 1fr; */
+  grid-template-columns: 240px 82vw;
+  grid-template-rows: 50px 1fr 50px;
+  grid-template-areas:
+    "sidenav header"
+    "sidenav main"
+    "sidenav footer";
+  height: 100vh;
+}
+
+.sidenav {
+  width: 240px;
+  background-color: #d1f2ff;
+}
+
+.main {
+  grid-area: main;
+  background-color: #ffffff;
+  padding-top: 2%;
+}
+
+.footer {
+  grid-area: footer;
+  background-color: #532cff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 16px;
+  height: 9vh;
+  margin-bottom: 0;
+}
+
+.footerCopyright {
+  font-weight: 500;
+  color: white;
+}
+
+.sidenav {
+  display: flex; /* Will be hidden on mobile */
+  flex-direction: column;
+  grid-area: sidenav;
+  background-color: #9e8f66;
+}
+
+.sidenav__list {
+  padding: 0;
+  padding-bottom: 5%;
+  margin-top: 85px;
+  list-style-type: none;
+}
+
+.sidenav__list-item {
+  padding: 20px 20px 30px 40px;
+  color: rgb(15, 2, 85);
+}
+
+.sidenav__list-item:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  cursor: pointer;
+}
+
+.main-header {
+  padding-top: 10%;
+  display: flex;
+  justify-content: space-between;
+  margin: 20px;
+  padding: 20px;
+  height: 20vh;
+  background-color: #e3e4e6;
+  color: slategray;
+}
+
+.main-overview {
+  padding-top: 2%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(265px, 1fr));
+  grid-auto-rows: 94px;
+  grid-gap: 20px;
+  margin: 20px;
+}
+
+.overviewcard {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: #9e8f6671;
+  border-radius: 1rem;
+}
+
+.overviewcard:hover {
+  transform: translateY(-15px);
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+.main-cards {
+  column-count: 2;
+  column-gap: 20px;
+  margin: 20px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  background-color: #82bef6;
+  margin-bottom: 20px;
+  -webkit-column-break-inside: avoid;
+  padding: 24px;
+  box-sizing: border-box;
+}
+
+.card:first-child {
+  height: 600px;
+}
+
+.card:nth-child(2) {
+  height: 180px;
+}
+
+.card:nth-child(3) {
+  height: 180px;
+}
+
+.card:nth-child(4) {
+  height: 180px;
+}
+
+.editProf {
+  text-decoration: none;
+  color: inherit;
+  --bs-tooltip-bg: var(--bs-primary);
+}
+
+.greet {
+  display: flex;
+  justify-content: center;
+  font-size: 25px;
+}
+
+.header {
+  grid-area: hd;
+  font-size: 3rem;
+}
+.footer {
+  grid-area: ft;
+}
+.content {
+  grid-area: main;
+}
+.sidebar {
+  grid-area: sd;
+}

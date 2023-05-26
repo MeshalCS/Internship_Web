@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Meshal Almubarak">
+    <link rel="icon" href="/img/C.png" />
+    <link rel="stylesheet" type="text/css" href="/css/edit-profile.css">
+    <link rel="stylesheet" type="text/css" href="/css/navbar.css">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+        <!--Google Font-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans&family=Open+Sans:wght@300&family=Poppins:wght@100;400&display=swap"
+    rel="stylesheet">
+<!--Font Awsome-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+<title>ملفي الشخصي</title>
+
+</head>
+<body>
+    <nav id="mainNavbar" class="navbar navbar-dark navbar-expand-md fixed-top">
+        <div class="container">
+            <img src="./img/C.png" alt="C" width="165" height="50">
+            <button class="navbar-toggler" data-toggle="collapse" data-target="#navLinks"
+                aria-label="تبديل التنقل">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navLinks">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a href="/" class="nav-link">الصفحة الرئيسية</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/profile" class="nav-link user-page">ملفي الشخصي</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/jobs" class="nav-link">فرص التدريب</a>
+                    </li>
+                </ul>
+            </div>
+            <span><a href="/sign-in" id="logout">تسجيل الخروج &nbsp<i class="fa-solid fa-right-from-bracket"></i></a></span>
+    
+    </nav>
+    <div class="mainDiv">
+        <div class="container subDiv rounded bg-white mt-5 mb-5">
+            <div class="row">
+                <div class="col-md-3 border-right">
+                    <div class="d-flex flex-column align-items-center text-center p-3 py-5"><img
+                            class="rounded-circle mt-5" width="150px" src="/img/user.png" alt="صورة ملف تعريف المستخدم"><span
+                            class="font-weight-bold" id="userName">المستخدم</span><span class="text-black-50"
+                            id="userEmail">البريد الإلكتروني</span><span> </span></div>
+                </div>
+                <div class="col-md-6 border-right">
+                    <div class="p-3 py-5">
+                        <form id="profileForm" action="/profile/edit-profile" method="post">
+                            <div class="d-flex justify-content-between align-items-center mb-3">
+                                <h4 class="text-right">إعدادات الملف الشخصي</h4>
+                            </div>
+    
+                            <div class="row mt-2">
+                                <div class="col-md-6"><label for="name" class="labels">الاسم</label><input type="text"
+                                        class="form-control" placeholder="الاسم" value="" name="name"></div>
+    
+                            </div>
+                            <div class="row mt-3">
+                                <div class="col-md-12"><label for="phone" class="labels">رقم الجوال</label><input
+                                        type="text" class="form-control" placeholder="أدخل رقم الجوال" value=""
+                                        name="phone"></div>
+                                <div class="col-md-12"><label for="email" class="labels">البريد الإلكتروني</label><input type="text"
+                                        class="form-control" placeholder="أدخل البريد الإلكتروني" value="" name="email"></div>
+                                <div class="col-md-12"><label class="labels">الدولة التي تود العمل فيها</label><input type="text" name="stateWish" class="form-control"
+                                        placeholder="يرجى إدخال الدول بفاصلة (,) مفصولة" value=""></div>
+                                <div class="col-md-12"><label class="labels" for="careers">اهتمامات الوظيفة</label><input type="text" name="careers" class="form-control"
+                                        placeholder="أدخل الوظائف التي تهتم بها" value="">
+                                </div>
+                                <div class="col-md-12"><label for="education" class="labels">التعليم</label><input
+                                        type="text" class="form-control" placeholder="التعليم" value=""
+                                        name="education"></div>
+                                <div class="col-md-12"><label for="skills" class="labels">المهارات</label><input
+                                        type="text" class="form-control" placeholder="أدخل المهارات التقنية" value=""
+                                        name="skills">
+                                </div>
+                                <div class="col-md-12"><label for="toWorkOn" class="labels">المهارات التي تود العمل عليها</label><input name="toWorkOn" type="text" class="form-control"
+                                        placeholder="أدخل المهارات التي تود العمل عليها" value=""></div>
+    
+                            </div>
+                            <div class="row mt-3">
+                                <div class="col-md-6"><label for="country" class="labels">بلد الإقامة</label><input name="country" type="text" class="form-control"
+                                        placeholder="البلد" value=""></div>
+                                <div class="col-md-6"><label for="state" class="labels">المنطقة/المحافظة</label><input
+                                        type="text" class="form-control" value="" placeholder="المنطقة/المحافظة" name="state">
+                                </div>
+                            </div>
+    
+                            <div class=" experience"><span>تعديل الخبرة</span></div><br>
+                            <div class="col-md-12 expDiv"><label for="experience" class="labels">الخبرة</label>
+                                <div id="experienceInput"><textarea name="experience" class="form-control"
+                                        id="exampleFormControlTextarea" placeholder="الخبرة" rows="3"
+                                        value=""></textarea>
+                                </div>
+                            </div>
+                            <div class="mt-5 text-center"><button class="btn btn-primary profile-button"
+                                    type="submit">حفظ الإعدادات</button></div>
+                        </form>
+                        <div id="test">
+                            <div class="test"></div>
+                        </div>
+                    </div>
+                </div>
+    
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+    
+                                        
+</body>
+<script src="/js/edit-profile.js"></script>
+
+
+</html>

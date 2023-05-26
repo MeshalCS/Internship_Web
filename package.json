@@ -1,0 +1,32 @@
+{
+  "name": "careerhelperapp",
+  "version": "1.0.0",
+  "description": "Career Helper App ",
+  "main": "app.js",
+  "type": "module",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "nodemon app.js",
+    "initDB": "mongoimport -d careerHelperMembers -c jobs --jsonArray --file ./public/resources/data.json"
+  },
+  
+  "author": "Meshal Almubarak",
+
+  "dependencies": {
+    "body-parser": "^1.20.1",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "express-session": "^1.17.3",
+    "mongodb": "^4.10.0",
+    "vercel": "^28.4.12"
+  },
+  "devDependencies": {
+    "cross-env": "^7.0.3",
+    "eslint": "^8.25.0",
+    "eslint-config": "^0.3.0",
+    "eslint-config-prettier": "^8.5.0",
+    "google-charts": "^2.0.0",
+    "nodemon": "^2.0.20",
+    "prettier": "^2.7.1"
+  }
+}
