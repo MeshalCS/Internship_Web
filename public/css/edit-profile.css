@@ -18,7 +18,7 @@ body {
 }
 
 .profile-button:focus {
-  background: #682773;
+  background: #fcdd94;
   box-shadow: none;
 }
 
@@ -53,6 +53,11 @@ body {
 #add:hover {
   background: rgb(62, 81, 177);
 }
+.btn btn-primary profile-button{
+  background: #7a6a42;
+}
+ 
+
 
 .experienceInput {
   padding-bottom: 5%;

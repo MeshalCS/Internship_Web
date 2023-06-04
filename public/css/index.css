@@ -98,7 +98,7 @@ a {
   left: 0;
   right: 0;
   height: 95vh;
-  transform: skewY(-12deg);
+  transform: skewY(12deg);
 }
 
 .main1 {
@@ -106,7 +106,7 @@ a {
 }
 
 .unskew {
-  transform: skewY(12deg);
+  transform: skewY(-12deg);
   padding-top: 35%;
 }
 

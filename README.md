@@ -1,56 +1,61 @@
-# Career Helper App
-The career helper app is particularly designed for anyone in the job search. The app would help users track their job search status and skills they need to work on to be better prepared for the job. The main collections in the db would be user basic info, and sub collections would be the jobs that a user has applied to (with attributes like status, job position etc), the skills the candidate has, and skills the candidate would like to work on. This application allows users to keep track of their job application, including storing the job's application url, status, opening date, and position.
+# The Internship Helper
+
+The Internship Helper is a user-friendly web application designed to aid students in finding the perfect internship opportunities. It streamlines the job search process by curating a list of opportunities that align with each student's profile, skills, and interests.
+
+## Table of Contents
+- [Project Overview](#project-overview)
+- [Technology Stack](#technology-stack)
+- [User Interaction](#user-interaction)
+- [Database Schema](#database-schema)
+- [CRUD Operations](#crud-operations)
+- [Code Overview](#code-overview)
+- [Conclusion](#conclusion)
+- [Final Product](#Final-Product)
+
+## Project Overview
+The Internship Helper is a comprehensive platform where students can organize their skills, specify their career interests, and find curated internship listings. The application is designed to save time and effort for students by making the process of finding and applying for internships simple and efficient.
+
+## Technology Stack
+The Internship Helper leverages a solid technology stack that includes:
+- Front-end: HTML, CSS, and JavaScript for a visually pleasing and user-friendly interface.
+- Back-end: Node.js and Express.js for reliable server-side operations.
+- Database: MongoDB for efficient data storage and retrieval.
+- Authentication: Ensuring secure access and user privacy on each page.
+
+## User Interaction
+The application offers a seamless user journey with simple navigation and functionality. It includes user registration and sign-in, profile viewing and editing, job searching based on user preferences, direct job application, and profile updates.
+
+## Database Schema
+Our MongoDB database consists of two primary collections:
+1. User Info Collection: Storing comprehensive information about each user including their unique identification, authentication info, personal details, and professional data.
+2. Job Post Data Collection: Holding data about available internship opportunities, ensuring all necessary information is available for users.
+
+## CRUD Operations
+The application supports a range of CRUD operations, allowing users to fetch their profile and job application info, create and update their profile details, and retrieve login information matching.
+![CRUD Operations Diagram](./images_for_read_me_GITHUB/Operations_Diagram.png)
+
+## Code Overview
+Our codebase follows best practices such as modularity, object-oriented programming, semantic HTML, and CSS styling, ensuring the application is easy to understand, modify, and debug.
+![Code Overview, Class Diagram](./images_for_read_me_GITHUB/Class_Diagram.png)
+
+## Conclusion
+The Internship Helper is committed to making the process of finding internships simpler and more efficient. By coupling a user-centric design with a robust technology stack, we've created a platform that is flexible, scalable, and responsive to the changing needs of users. We aim to continuously improve and evolve our platform to better serve our users in their quest to find the perfect internship opportunities.
+
+## Final product
+1.	Home Page:
+![Home Page:](./images_for_read_me_GITHUB/Home_Page.png)
+2.  About:
+![About:](./images_for_read_me_GITHUB/about.png)
+3.	Registration:
+![Registration:](./images_for_read_me_GITHUB/Registration.png)
+4.	Sign-In:
+![Sign-In:](./images_for_read_me_GITHUB/Sign-In.png)
+5.	Profile:
+![Profile:](./images_for_read_me_GITHUB/Profile.png)
+6.	Edite-Profile:
+![Edite-Profile:](./images_for_read_me_GITHUB/Edite-Profile.png)
+7.	Job Search:
+![Job Search:](./images_for_read_me_GITHUB/Job-Search.png)
 
 
-## Project Objective
-A career helper app built with Node.js, Express.js, MongoDB, HTML, CSS, Javascript.
 
-## Deployment URL
-https://career-helper-app.herokuapp.com/
-
-## Screenshots
-### Home Page
-<img width="1833" alt="Screen Shot 2022-10-31 at 10 53 17 PM" src="https://user-images.githubusercontent.com/58647320/199170785-f3c4ffbc-add8-47f2-8a14-a76d3eb63abe.png">
-<img width="1762" alt="Screen Shot 2022-10-31 at 10 54 18 PM" src="https://user-images.githubusercontent.com/58647320/199170796-807109b1-b943-4c28-9e5a-0ba200cd537f.png">
-<img width="1798" alt="Screen Shot 2022-10-31 at 10 53 46 PM" src="https://user-images.githubusercontent.com/58647320/199170793-c041b0fc-9175-4f19-b556-8a01cb9249a4.png">
-
-### Sign Up Page
-<img width="1444" alt="Screen Shot 2022-10-31 at 10 55 14 PM" src="https://user-images.githubusercontent.com/58647320/199170802-6847f415-0366-477f-8bdc-0b5e612e0e79.png">
-
-### Sign In Page
-<img width="1559" alt="Screen Shot 2022-10-31 at 10 55 27 PM" src="https://user-images.githubusercontent.com/58647320/199170806-2b8ad496-1d19-476a-9ae6-35aaf3c9b015.png">
-
-
-
-### My Profile Page
-<img width="1718" alt="Screen Shot 2022-11-01 at 12 44 42 AM" src="https://user-images.githubusercontent.com/58647320/199184084-0180dfb3-d40b-4ab2-82f0-0cd50bb3d36a.png">
-
-
-### Edit Profile Page
-<img width="1263" alt="Screen Shot 2022-10-31 at 11 32 50 PM" src="https://user-images.githubusercontent.com/58647320/199173310-5294245b-6998-41ef-acbf-3653000008d3.png">
-
-
-### Job Page
-<img width="1279" alt="Screen Shot 2022-10-31 at 11 18 22 PM" src="https://user-images.githubusercontent.com/58647320/199171241-4d0e34a1-9125-43d7-9cb0-744609b9222c.png">
-
-## Instructions to build
-1. Git clone or zip download
-2. Run ```npm install```
-3. Run ```npm run initDB``` to download data.json file into local mongoDB in order to see job posts information for the jobs page
-4. Run ```npm run dev``` to run in development mode
-
-## Google Slides
-https://docs.google.com/presentation/d/1LDu-aQO1kb1h-K93a5c6HTp4jHIgH42dJ02MjFZht0Y/edit?usp=sharing
-
-## Business Document
-https://docs.google.com/document/d/171yKsxTVATrT30e2c8YJNQw8LKx3K8I0HCIAf1SHlSk/edit
-
-## Video
-https://www.youtube.com/watch?v=egF2Lr6hlZQ
-
-## Authors
-- Meshal Almubarak
-- So Man Amanda Au-Yeung
-
-## Class Link
-https://johnguerra.co/classes/webDevelopment_fall_2022/
