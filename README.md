@@ -1,4 +1,4 @@
-# The Internship Helper
+# The Internship Web
 
 The Internship Helper is a user-friendly web application designed to aid students in finding the perfect internship opportunities. It streamlines the job search process by curating a list of opportunities that align with each student's profile, skills, and interests.
 
