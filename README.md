@@ -1,8 +1,8 @@
 # The Internship Helper
 
-## follow this link: http://intership.yt.sa/
-
 The Internship Helper is a user-friendly web application designed to aid students in finding the perfect internship opportunities. It streamlines the job search process by curating a list of opportunities that align with each student's profile, skills, and interests.
+
+## follow this link: http://intership.yt.sa/
 
 ## Table of Contents
 - [Project Overview](#project-overview)
